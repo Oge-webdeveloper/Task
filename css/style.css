@@ -64,6 +64,7 @@ nav .menu-icon{
     display:none;
 }
 
+
 header{
     display:flex;
     background-color: #f9f9f9;
@@ -109,8 +110,88 @@ header .mobile-design {
 }
 
 
+.first-section {
+    background-color: #f3f4f6;
+    padding:80px 100px 80px 120px;
+}
+.first-section .top h2{
+    color:#454040;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 36px;
+    padding-bottom: 20px;
+}
+.first-section .top p{
+    color:#6b6a6a;
+    line-height: 24px;
+    padding-bottom: 56px;
+}
+.first-section .bottom{
+    display: flex;
+    gap:28px;
+}
+.first-section .bottom .icons img{
+    padding-bottom: 24px;
+}
+.first-section .bottom .icons h3{
+    padding-bottom: 24px;
+    color:#454040;
+    font-size: 24px;
+    font-weight: 250;
+    line-height: 32px;
+}
+.first-section .bottom .icons p{
+    color:#6b6a6a;
+    line-height: 24px;
+}
 
 
+.second-section{
+    background-color: #f6f6f6;
+    padding:80px 100px 80px 120px;
+}
+.second-section .top h2{
+    color:#454040;
+    font-size: 36px;
+    font-weight: 200;
+    line-height: 35px;
+    padding-bottom: 48px;
+}
+.second-section .bottom{
+    display: flex;
+    gap:32px;
+}
+.second-section .bottom .image{
+    border:1px solid #ffffff;
+    border-radius: 5px;
+    background-color:#ffffff;
+}
+.second-section .bottom .image img{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.second-section .bottom .image .first-paragraph{
+    color: #6b6a6a;
+    font-size:13px;
+    line-height: 10px;
+    padding:20px 20px 16px 20px;
+}
+.second-section .bottom .image .second-paragraph{
+    color: #454040;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    padding:0px 20px 16px 20px;
+}
+.second-section .bottom .image .second-paragraph:hover{
+    color: rgb(82, 233, 82);
+    cursor:pointer;
+}
+.second-section .bottom .image .third-paragraph{
+    color:#6b6a6a;
+    padding:0px 20px 16px 20px;
+}
 
 
 
@@ -123,7 +204,7 @@ header .mobile-design {
 
 
 /***MEDIA QUERY***/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     nav{
         padding-left:32px;
         padding-right:32px;
@@ -155,7 +236,7 @@ header .mobile-design {
         gap:20px;
     }
     header .hero-left{
-        padding: 0px 0px 0px 0px;
+        padding: 0px 32px 0px 32px;
         text-align: center;
     }
     header .hero-right img{
@@ -166,5 +247,20 @@ header .mobile-design {
     }
     header .mobile-design img{
         width:100%;
+    }
+
+    .first-section .top{
+        text-align: center;
+    }
+    .first-section .bottom{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .second-section .top{
+        text-align: center;
+    }
+    .second-section .bottom{
+        flex-direction: column;
     }
 }
