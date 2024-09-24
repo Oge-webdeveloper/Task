@@ -349,7 +349,7 @@ footer .footer-request p{
     }
     .second-section .bottom .image{
         margin: 0 auto;
-        width: 250px;
+        width: 100%;
         height: fit-content;
     }
     footer{
