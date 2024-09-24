@@ -205,6 +205,9 @@ footer{
 footer .footer-logo img{
     padding-bottom:35px;
 }
+footer .footer-logo a{
+    text-decoration: none;
+}
 footer .footer-logo svg :hover{
     fill:hsl(136, 65%, 51%);
 }
@@ -306,6 +309,9 @@ footer .footer-request p{
     }
     nav .menu-icon{
         display:block;
+    } 
+    nav .menu-icon .x-icon{
+        display:none;
     }
     header{
         display:flex;
@@ -339,49 +345,49 @@ footer .footer-request p{
     }
     .second-section .bottom{
         flex-direction: column;
+        gap:32px;
     }
     .second-section .bottom .image{
         margin: 0 auto;
+        width: 250px;
+        height: fit-content;
     }
     footer{
-        display:flex;
         flex-direction: column;
         height:600px;
-        margin: 0 auto;
+        padding:32px 50px 50px 32px;
+        text-align: center;
     }
     footer .footer-logo{
         text-align: center;
     }
-    footer .footer-links {
-        display:inline-block;
-        text-align:center;
-        
+    footer .footer-links{
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* text-align: center; */
     }
-    footer .footer-links ul{
-       justify-content: center;
-       align-items: center;
+    footer .footer-links a{
+        padding-right: 0px;
+        text-align: center;
     }
     footer .footer-links .row-one{
-        text-align: center;
-        left:0px;
-        right:0px;
-        padding-top: 20px;
-        padding-left: 0px;
         padding-right: 0px;
-        justify-content: center;
     }
     footer .footer-links .row-two{
-        text-align: center;
-        left:0px;
-        right:0px;
-        padding-left: 0px;
         padding-right: 0px;
-        margin:0 auto;
+        margin-right: 0px;
+        right:0px;
     }
     footer .footer-request{
         text-align: center;
     }
+    footer .footer-request a button {
+        text-align: center;
+        justify-content: center;
+    }
     footer .footer-request p{
+        text-align: center;
         padding-bottom: 32px;
     }
 }
